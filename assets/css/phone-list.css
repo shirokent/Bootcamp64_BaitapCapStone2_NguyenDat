@@ -1,1 +1,77 @@
-/*# sourceMappingURL=phone-list.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+header {
+  background: #3d3b40;
+}
+header .header_content {
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .header_content .header_logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .header_content .header_logo a:hover {
+  color: #525ceb;
+}
+header .header_content .header_logo a i {
+  color: #f8edff;
+}
+header .header_content .header_logo a h1 {
+  margin: 0 14px;
+  font-size: 28px;
+  font-weight: 500;
+  color: #f8edff;
+}
+header .header_content .header_nav ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0px;
+}
+header .header_content .header_nav ul li {
+  margin: 0 10px;
+  position: relative;
+}
+header .header_content .header_nav ul li:hover a {
+  color: #525ceb;
+}
+header .header_content .header_nav ul li:hover a::before {
+  width: 100%;
+}
+header .header_content .header_nav ul li.active a {
+  color: #525ceb;
+}
+header .header_content .header_nav ul li.active a::before {
+  width: 100%;
+}
+header .header_content .header_nav ul li a {
+  font-size: 20px;
+  font-weight: 500;
+  color: #f8edff;
+  text-decoration: none;
+}
+header .header_content .header_nav ul li a:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #525ceb;
+  bottom: -5px;
+  left: 0;
+  transition: all 0.5s;
+}/*# sourceMappingURL=phone-list.css.map */

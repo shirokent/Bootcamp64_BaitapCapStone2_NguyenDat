@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Phone_list</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,10 +16,110 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
     <!-- CSS -->
     <link rel="stylesheet" href="../../assets/css/phone-list.css" />
   </head>
   <body>
+    <header>
+      <div class="container">
+        <div class="header_content">
+          <div class="header_logo">
+            <a href="#">
+              <i class="fa-solid fa-mobile-screen-button fa-2xl"></i>
+              <h1>CyberPhone</h1>
+            </a>
+          </div>
+          <div class="header_nav">
+            <ul>
+              <li><a href="../../home-customer/view/index.html">Home</a></li>
+              <li class="active"><a href="#">Admin</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="table">
+      <div class="container">
+        <div class="table_content">
+          <div class="table_form">
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary btn-lg"
+              data-toggle="modal"
+              data-target="#modelId"
+            >
+              Add Product
+            </button>
+
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="modelId"
+              tabindex="-1"
+              role="dialog"
+              aria-labelledby="modelTitleId"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title">Add Product</h5>
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">Body</div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Add</button>
+                    <button type="button" class="btn btn-primary">
+                      Update
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- end modal -->
+          </div>
+          <div class="table_phone">
+            <table class="table bg-primary">
+              <thead>
+                <tr>
+                  <th class="text-center">ID</th>
+                  <th class="text-cent er">Name</th>
+                  <th class="text-center">Price</th>
+                  <th class="text-center">Photo</th>
+                  <th class="text-center">Description</th>
+                  <th class="text-center">Action</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
