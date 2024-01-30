@@ -20,8 +20,6 @@ header {
     align-items: center;
 
     .header_logo {
-      // color: #fff;
-      // display: flex;
       a {
         text-decoration: none;
         text-transform: uppercase;
@@ -77,6 +75,7 @@ header {
             font-weight: 500;
             color: #f8edff;
             text-decoration: none;
+            transition: all 0.5s;
             &:before {
               content: "";
               position: absolute;

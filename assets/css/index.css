@@ -64,6 +64,7 @@ header .header_content .header_nav ul li a {
   font-weight: 500;
   color: #f8edff;
   text-decoration: none;
+  transition: all 0.5s;
 }
 header .header_content .header_nav ul li a:before {
   content: "";

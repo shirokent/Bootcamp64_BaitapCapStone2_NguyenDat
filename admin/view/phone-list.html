@@ -16,6 +16,13 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- GG FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- CDN -->
     <link
       rel="stylesheet"
@@ -34,9 +41,12 @@
         <div class="header_content">
           <div class="header_logo">
             <a href="#">
-              <i class="fa-solid fa-mobile-screen-button fa-2xl"></i>
+              <i class="fa-solid fa-robot fa-2xl"></i>
               <h1>CyberPhone</h1>
             </a>
+            <!-- <a href="#">
+              <img src="../../assets/image/image 3.svg" alt="" />
+            </a> -->
           </div>
           <div class="header_nav">
             <ul>
@@ -52,15 +62,17 @@
         <div class="table_content">
           <div class="table_form">
             <!-- Button trigger modal -->
-            <button
-              type="button"
-              class="btn btn-primary btn-lg"
-              data-toggle="modal"
-              data-target="#modelId"
-            >
-              Add Product
-            </button>
-
+            <div class="table_header">
+              <h2>Product Management</h2>
+              <button
+                type="button"
+                class="btn_add btn-primary btn-lg"
+                data-toggle="modal"
+                data-target="#modelId"
+              >
+                Add Product
+              </button>
+            </div>
             <!-- Modal -->
             <div
               class="modal fade"
@@ -83,7 +95,135 @@
                       <span aria-hidden="true">&times;</span>
                     </button>
                   </div>
-                  <div class="modal-body">Body</div>
+                  <div class="modal-body">
+                    <!-- MODAL BODY START -->
+                    <div id="phoneForm">
+                      <!-- ID -->
+                      <div class="form-group">
+                        <label for="phoneId">ID</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phoneID"
+                          placeholder="ID"
+                          value=""
+                          required
+                        />
+                        <div id="invalidID" class="invalid-feedback"></div>
+                      </div>
+                      <!-- Name -->
+                      <div class="form-group">
+                        <label for="phoneName">Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phoneName"
+                          placeholder="Phone Name"
+                          value=""
+                          required
+                        />
+                        <div id="invalidName" class="invalid-feedback"></div>
+                      </div>
+                      <!-- Price -->
+                      <div class="form-group">
+                        <label for="phonePrice">Price</label>
+                        <input
+                          type="number"
+                          class="form-control"
+                          id="phonePrice"
+                          placeholder="Phone Price"
+                          value=""
+                          required
+                        />
+                        <div id="invalidPrice" class="invalid-feedback"></div>
+                      </div>
+                      <!-- Screen -->
+                      <div class="form-group">
+                        <label for="phoneScreen">Screen</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phoneScreen"
+                          placeholder="Phone Screen"
+                          value=""
+                          required
+                        />
+                        <div id="invalidScreen" class="invalid-feedback"></div>
+                      </div>
+                      <!-- Back Camera -->
+                      <div class="form-group">
+                        <label for="phoneBackCamera">Phone Back Camera</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phoneBackCamera"
+                          placeholder="Phone Back Camera"
+                          value=""
+                          required
+                        />
+                        <div
+                          id="invalidBackCamera"
+                          class="invalid-feedback"
+                        ></div>
+                      </div>
+                      <!-- Front Camera -->
+                      <div class="form-group">
+                        <label for="phoneFrontCamera">Phone Front Camera</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phoneFrontCamera"
+                          placeholder="Phone Front Camera"
+                          value=""
+                          required
+                        />
+                        <div
+                          id="invalidFrontCamera"
+                          class="invalid-feedback"
+                        ></div>
+                      </div>
+                      <!-- IMG -->
+                      <div class="form-group">
+                        <label for="phoneImage">Phone Image</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phoneImage"
+                          placeholder="Phone Image"
+                          value=""
+                          required
+                        />
+                      </div>
+                      <!-- Description -->
+                      <div class="form-group">
+                        <label for="phoneDescription">Phone Description</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="phoneDescription"
+                          placeholder="Phone Description"
+                          value=""
+                          required
+                        />
+                        <div
+                          id="invalidDescription"
+                          class="invalid-feedback"
+                        ></div>
+                      </div>
+                      <!-- Type -->
+                      <div class="form-group">
+                        <label for="phoneType">Phone Type</label>
+                        <select class="form-control" id="phoneType" required>
+                          <option value="">Choose type of phone</option>
+                          <option value="0">Samsung</option>
+                          <option value="1">Iphone</option>
+                        </select>
+                        <div id="invalidType" class="invalid-feedback"></div>
+                      </div>
+                    </div>
+
+                    <!-- MODAL BODY END -->
+                  </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-success">Add</button>
                     <button type="button" class="btn btn-primary">
@@ -107,7 +247,7 @@
               <thead>
                 <tr>
                   <th class="text-center">ID</th>
-                  <th class="text-cent er">Name</th>
+                  <th class="text-center">Name</th>
                   <th class="text-center">Price</th>
                   <th class="text-center">Photo</th>
                   <th class="text-center">Description</th>
