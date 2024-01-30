@@ -117,6 +117,28 @@ header {
         }
       }
       .modal {
+        .modal-dialog {
+          .modal-content {
+            .modal-body {
+              #phoneForm {
+                .form-group {
+                  label {
+                    font-size: 14px;
+                    color: #3d3b40;
+                    font-weight: 500;
+                  }
+                  .invalid-form {
+                    display: block;
+                    width: 100%;
+                    margin-top: 10px;
+                    font-size: 12px;
+                    color: #dc3545;
+                  }
+                }
+              }
+            }
+          }
+        }
       }
     }
     .table_phone {

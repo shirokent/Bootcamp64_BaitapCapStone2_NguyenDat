@@ -96,6 +96,18 @@ header .header_content .header_nav ul li a:before {
 .table .table_content .table_form .table_header .btn_add {
   font-size: 14px;
 }
+.table .table_content .table_form .modal .modal-dialog .modal-content .modal-body #phoneForm .form-group label {
+  font-size: 14px;
+  color: #3d3b40;
+  font-weight: 500;
+}
+.table .table_content .table_form .modal .modal-dialog .modal-content .modal-body #phoneForm .form-group .invalid-form {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #dc3545;
+}
 .table .table_content .table_phone .table thead th {
   font-size: 12px;
 }/*# sourceMappingURL=phone-list.css.map */
