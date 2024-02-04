@@ -225,8 +225,14 @@
                     <!-- MODAL BODY END -->
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-success">Add</button>
-                    <button type="button" class="btn btn-primary">
+                    <button
+                      onclick="createPhone()"
+                      type="button"
+                      class="btn btn-success"
+                    >
+                      Add
+                    </button>
+                    <button onclick="" type="button" class="btn btn-primary">
                       Update
                     </button>
                     <button
@@ -254,12 +260,14 @@
                   <th class="text-center">Action</th>
                 </tr>
               </thead>
+              <tbody id="listPhone"></tbody>
             </table>
           </div>
         </div>
       </div>
     </div>
 
+    <img src="" />
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -277,5 +285,15 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <!-- AXIOS -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"
+      integrity="sha512-NQfB/bDaB8kaSXF8E77JjhHG5PM6XVRxvHzkZiwl3ddWCEPBa23T76MuWSwAJdMGJnmQqM0VeY9kFszsrBEFrQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- MAIN JS -->
+    <!-- <script src="../services/Service.js"></script> -->
+    <script src="../controller/main.js"></script>
   </body>
 </html>

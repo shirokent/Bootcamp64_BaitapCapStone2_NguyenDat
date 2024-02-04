@@ -87,6 +87,9 @@ header .header_content .header_nav ul li a:before {
   align-items: center;
   background: #3d3b40;
   padding: 20px;
+  border: 3px solid #3d3b40;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 .table .table_content .table_form .table_header h2 {
   font-size: 18px;
@@ -109,5 +112,15 @@ header .header_content .header_nav ul li a:before {
   color: #dc3545;
 }
 .table .table_content .table_phone .table thead th {
-  font-size: 12px;
+  font-size: 14px;
+}
+.table .table_content .table_phone .table tbody td {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  margin: auto;
+  line-height: 174px;
+}
+.table .table_content .table_phone .table tbody td img {
+  border-radius: 14px;
 }/*# sourceMappingURL=phone-list.css.map */
